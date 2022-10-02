@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* everything */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* root */
+:root {
+  --color-primary: #77e5da;
+  --color-light: #12d4ee;
+  --color-dark: #061c0d;
+  --color-grey-light: #cfd4d7;
+  --transition: all 0.3s ease;
+  --border-radius: 4px;
+  --maxWidth: 700px;
+  --formMaxWidth: 500px;
+  --font-family: ' Roboto ', sans-serif;
+}
+
+/* base */
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* index */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+.show{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.show form{
+    margin-top: 1rem;
+}
+/* form */
+.form-control {
+  margin: .5rem 0;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+}
+
+.broken {
+  display: flex;
+}
+
+input[type='checkbox'] {
+  padding: 0;
+  width: 10%;
+}
+
+/* utilities */
+.wrapper {
+  max-width: var(--MaxWidth);
+  margin: .5rem auto 0;
+  padding: 1rem;
+}
+
+.delete {
+    color:red;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-primary);
+  color: var(--color-light);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: var(font-family);
+  font-size: 1.1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-dark);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: .5rem;
+  margin: 1rem 0;
+}
+
+.item {
+  border: 1px solid var(--color-grey-light);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+}
+ a.item {
+    color : var(--color-dark);
+}
