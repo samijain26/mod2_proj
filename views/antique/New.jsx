@@ -8,20 +8,22 @@ class New extends React.Component {
       <Layout title='Create new item entry' group ="antiques">
         <div className="wrapper">
           <h1>Create A new Entry</h1>
-          <form action="/antique" encType="multipart/form-data" method="POST">
+          {/* <form action="/antique" encType="multipart/form-data" method="POST"> */}
+             <form action="/antique"  method="POST"> 
+
             <div className="form-control broken">
               <label htmlFor="name">Name:</label>
               <input
                 type="text"
                 id="name"
-                name="Name"
+                name="name"
                 placeholder="enter title.."
                 required
               />
             </div>
             <div className="form-control broken">
               <label htmlFor="description">Description:</label>
-              <textarea name="description" id="description" cols="30" rows="10" placeholder="enter entry.."
+              <textarea name="description" id="description" cols="30" rows="5" placeholder="enter entry.."
                 required></textarea>
               
             </div>
@@ -33,10 +35,10 @@ class New extends React.Component {
               <label htmlFor="price" >Price:</label>
               <input type="number" id="price" name="price" />
             </div>
-            <div className="form-control broken" >
+            {/* <div className="form-control broken" >
               <label htmlFor="image" >Image:</label>
               <input type="file" id="image" name="image" />
-            </div>
+            </div> */}
             <button className="btn" type="submit">
               Submit
             </button>

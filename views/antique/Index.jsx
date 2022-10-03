@@ -3,18 +3,18 @@ const Layout = require('../layout/layout')
 
 class Index extends React.Component {
   render() {
-    const  antiqueseed  = this.props.antiqueseed
-    console.log(antiqueseed)
+    const  antiqueModel  = this.props.antiqueModel
+    console.log(antiqueModel)
     return(
         <Layout title="Listing of available item" group="antiques">
             <div className="wrapper">
                 <div className="header">
-                 <h1>All Antique Pieces</h1>
+                 <h1 > Antiques  aroud the World</h1>
             <a href="/antique/new">Add new piece in inventiory</a>
           </div>
           <div className="items">
-            { antiqueseed.map(antique => {
-              const { name, description, origin ,price,image} = antique
+            { antiqueModel.map(antique => {
+              const { name, description,_id, origin ,price} = antique
 
               return (
                 
@@ -30,11 +30,11 @@ class Index extends React.Component {
                     {origin}
                   </li>
                   <li>
-                  <span className="bold">price </span>{price}
+                  <span className="bold">Price: </span>${price}
                   </li>
-                  <li>
+                  {/* <li>
                   <span className="bold">Image </span>{image}
-                  </li>
+                  </li> */}
                 </a>
               )
             })}

@@ -1,0 +1,331 @@
+* { 
+    margin:0;
+    padding:0;
+   box-sizing: border-box; 
+   color: rgb(31, 2, 69);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bolder;
+
+}
+body{
+    margin: 0;
+    background-color: rgb(44, 32, 218);
+    background-image: linear-gradient(45deg,cyan,white)
+    
+
+}
+/* .gamerule{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   background-color: rgb(0, 255, 242);
+   border:2px solid red;
+   border-radius: 20px;
+  
+} */
+.container{
+  
+    display: flex;
+    /* height: 90vh; */
+    justify-content: center;
+   align-items: center;
+   /* width: 80vw; */
+    flex-direction: column;
+  
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inside_container{
+   
+    display: flex;
+    height: 98vh;
+    justify-content: space-around;
+   align-items: center;
+   width: 80vw;
+    flex-direction: column;
+  background-color: #1a8444;
+  /* background-image: linear-gradient(45deg,green,white); */
+
+ 
+    border-radius: 65px;
+   
+}
+.title{
+    display: flex;
+    justify-content: center;
+  
+    margin-top: 9px;
+    align-items: center;
+    font-size: 2.1rem;
+    width:70vw;
+    height: 20vh;
+    /* z-index: 3; */
+background-color: rgb(37, 175, 53);
+background-image: linear-gradient(45deg,cyan,pink,white,cyan,orange);
+   /* border: 1px solid; */
+   border-radius: 60px;
+   
+   /* margin:2px; */
+   box-shadow: 0 4px rgb(200, 137, 137);
+   font-weight: bolder;
+  
+
+}
+.score {
+    display: flex;
+  
+    /* z-index: 2; */
+    background-image: linear-gradient(45deg,cyan,pink,white,cyan,orange);
+   flex-wrap: wrap;
+  
+    width: 60vw;
+    font-size: 1.2rem;
+    /* border: 1px solid blue; */
+    border-radius: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    height:30vh;
+    padding: 4px;
+    box-shadow: 0 4px rgb(200, 137, 137);
+   font-weight: 200;
+}
+.playerscore,.computerscore{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+   
+    /* height: 10vh; */
+  
+
+
+}
+.turn{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 10px;
+    width: 60vw;
+    border-radius: 60px;
+   
+
+}
+.update_turn{
+    /* display:"none"; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height:10vh;
+    width:50vw;
+    font-size: 1rem;
+    color:black;
+    background-image: linear-gradient(45deg,cyan,pink,white,cyan,orange);
+    border-radius: 60px;
+    box-shadow: 0 4px rgb(200, 137, 137);
+}
+.image_container{
+    display:none;
+    /* display:flex; */
+    width: 60vw;
+    height: 30vh;
+    /* border: 1px solid gold; */
+    justify-content:space-evenly;
+    align-items: center;
+    /* outline:red solid 5px; */
+    margin: 10px;
+    border-radius: 60px;
+    box-shadow: 0 4px rgb(200, 137, 137);
+}
+.image_container_display{
+    display: flex;
+    background-image: linear-gradient(45deg,cyan,pink,white,cyan,orange);
+    box-shadow: 0 4px rgb(200, 137, 137);
+   
+}
+h3{   display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+.p_score,.c_score{
+    display:none;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  
+
+}
+.choice{
+    display:flex;
+   width: 60vw;
+   height:15vh;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: lightblue; */
+    border-radius: 60px;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+
+
+.rock,.paper,.scissor{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 60px;
+    width:150px;
+    height:15vh;
+    cursor:pointer;
+    box-shadow: 0 4px rgb(200, 137, 137);
+    /* padding: auto; */
+    /* margin: 10px; */
+    background-image: linear-gradient(45deg,cyan,pink,white,cyan,orange);
+  
+}
+.rock:hover {
+background-image: rgb(226, 43, 217);
+}
+
+.rock:active {
+    background-color: #b67813a4;
+    box-shadow: 0 5px #666;
+    transform: translateY(8px);
+ }
+
+  .paper:hover {
+    background-color: blueviolet;
+  }
+
+ .paper:active {
+    background-color:#b67813a4;
+    box-shadow: 0 5px #666;
+    transform: translateY(8px);
+ }
+
+.scissor:hover {
+background-color: blueviolet;
+     }
+
+.scissor:active {
+ background-color: #b67813a4;
+box-shadow: 0 5px #666;
+ transform: translateY(8px);
+ }
+
+ /* image style to show in button */
+ .img_style{
+
+    width : 70px;
+    height : 70px;
+    border-radius: 60px;
+    
+}
+
+
+/* Image style to show in image container what player and computer picked */
+.img{
+
+    width : 10vw;
+   margin:10px;
+    border-radius: 60px;
+    animation-name:rotate 5s infinite;
+    animation-duration:5s;
+    animation-timing-function: linear;
+    /* transform: rotate(90deg) ;
+    animation:rotate 2s easein 3s infinite; */
+    
+}
+ @keyframes rotate{
+    from{left:0px };
+    to{left:300px}; 
+
+   
+ }  
+
+
+.restart{
+    /* display: none; */
+       display :none;
+ 
+       background-image: linear-gradient(45deg,pink,white,cyan,orange);
+    border-radius: 20px;
+    width:100px;
+    height:50px;
+    
+    margin:6px;
+    padding:auto;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0 4px rgb(200, 137, 137);
+    font-size: 1rem;
+}
+.endgame{
+    /* display: none; */
+       display :none;
+       background-image: linear-gradient(45deg,pink,white,cyan,orange);
+    border-radius: 20px;
+    width:100px;
+    height:50px;
+   
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0 4px rgb(200, 137, 137);
+    font-size: 1rem;
+}
+.last{
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+}
+.result{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+   height:17vh;
+   background-image: linear-gradient(45deg,pink,white,cyan,orange);
+    font-size: 1rem;
+    border-radius: 40px;
+    box-shadow: 0 4px rgb(200, 137, 137);
+
+}
+@media screen and (max-width: 640px)
+{ 
+    .title{
+       
+        text-align: center;
+    }
+    .score{
+       
+       
+        width:60vw;
+       
+    }
+    .choice{
+        width:60vw;
+       
+    }
+    .turn{
+        width:60vw;
+        height:15vh;
+     
+    }
+  .result{
+    width: 60vw;
+    
+  }
+.rock,.paper,.scissor{
+    width:60vw;
+    height:15vh;
+}
+
+}
