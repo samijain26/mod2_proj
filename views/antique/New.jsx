@@ -35,10 +35,10 @@ class New extends React.Component {
               <label htmlFor="price" >Price:</label>
               <input type="number" id="price" name="price" />
             </div>
-            {/* <div className="form-control broken" >
+            <div className="form-control broken" >
               <label htmlFor="image" >Image:</label>
-              <input type="file" id="image" name="image" />
-            </div> */}
+              <input type="text" id="image" name="image" />
+            </div>
             <button className="btn" type="submit">
               Submit
             </button>

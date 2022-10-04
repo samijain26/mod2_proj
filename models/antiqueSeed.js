@@ -1,6 +1,6 @@
 const antiqueSeed = [
     { 
-      image:"",
+      image:"https://i.etsystatic.com/22611874/r/il/d8f3c7/2733390745/il_1588xN.2733390745_su4s.jpg",
       name: 'Indian Miniature Panting1',
       description:
         "Miniature of 4 ladies.",
