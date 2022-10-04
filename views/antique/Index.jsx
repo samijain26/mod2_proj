@@ -9,12 +9,12 @@ class Index extends React.Component {
         <Layout title="Listing of available item" group="antiques">
             <div className="wrapper1">
                 <div className="header" >
-                 <h1 > Antiques  aroud the World</h1>
-            <a href="/antique/new">Add new piece in inventiory</a>
+                 <h1 > Jwels of India</h1>
+            <a href="/antique/new">Add New Product</a>
           </div>
           <div className="items">
             { antiqueModel.map(antique => {
-              const {name, description, _id, origin, price, image} = antique
+              const {name, description, _id, origin, price, image,quantity} = antique
 
               return (
                 
@@ -37,7 +37,9 @@ class Index extends React.Component {
                   <li>
                   <span className="bold">Price: </span>${price}
                   </li>
-                  
+                  <li>
+                  <span className="bold">Quantity Available: </span>{quantity}
+                  </li>
                 </a>
               )
             })}

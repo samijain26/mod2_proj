@@ -2,21 +2,21 @@ const express = require('express')
 const router = express.Router()
 const antiqueSeed = require('../models/antiqueSeed')
 const antiqueModel = require('../models/antiqueModel')
-const multer = require('multer')
-const path = require('path')
+//const multer = require('multer')
+//const path = require('path')
 
 
- var storage = multer.diskStorage({
-    destination: (req, file, callback) => {
-    callback(null, './public/images')
- },
- filename: (req, file, callback) => {
-    console.log(file)
-    var filetype = file.mimetype;
-    var fileformate = filetype.split("/")[1];
-    callback(null, Date.now() + path.extname(file.originalname) );
- }
-});
+//  var storage = multer.diskStorage({
+//     destination: (req, file, callback) => {
+//     callback(null, './public/images')
+//  },
+//  filename: (req, file, callback) => {
+//     console.log(file)
+//     var filetype = file.mimetype;
+//     var fileformate = filetype.split("/")[1];
+//     callback(null, Date.now() + path.extname(file.originalname) );
+//  }
+// });
 //} = require('../controllers/antiqueController')
 //const antiqueModel = require('../models/antiqueModel')
 
@@ -82,11 +82,7 @@ router.put('/:id',(req,res) =>{
 
 // router.post('/',upload.single('image'),(req,res)=>{
   router.post('/',(req,res)=>{
-    antiqueModel.create({name:req.body.name,
-                    description: req.body.description,
-                    image: req.body.image,
-                    origin: req.body.origin,
-                    price:req.body.price,}, (err, createdModel) => {
+    antiqueModel.create(req.body, (err, createdModel) => {
         if (err) {
             res.status(400).json(err)
         } else {//res.send("image loaded")
@@ -96,6 +92,43 @@ router.put('/:id',(req,res) =>{
     })
   })
 
+  router.get('/seed', (req,res) =>{
+    antiqueModel.deleteMany({}, (error, deletedModel) => {
+      if (error) {
+          res.status(400).json(error)
+      } else {
+          //console.log('deleted data.')
+          
+          // Data has been successfully deleted
+          // Now use seed data to repopulate the database
+          antiqueModel.create(antiqueSeed, (err, createdModel) => {
+            console.log(antiqueSeed)
+              if (error) {
+                  res.status(400).json(error)
+              } else {
+                  res.status(200).redirect('/antique')
+              }
+          })
+      }
+  })
+})
+
+router.get('/clear', (req, res) => {
+  // Delete all remaining documents (if there are any)
+  antiqueModel.deleteMany({}, (error, deletedModel) => {
+      if (error) {
+          res.status(400).json(error)
+      } else {
+        res.status(200).redirect('/antique')
+              }
+            })
+  })
+
+
+
+
+
+  
   
    router.get('/:id',(req,res) =>{
     console.log('antiqueModel')

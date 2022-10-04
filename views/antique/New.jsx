@@ -5,9 +5,9 @@ const Layout = require('../layout/layout')
 class New extends React.Component {
   render() {
     return (
-      <Layout title='Create new item entry' group ="antiques">
+      <Layout title='Add New Product' group ="antiques">
         <div className="wrapper">
-          <h1>Create A new Entry</h1>
+          <h1>Add New Product</h1>
           {/* <form action="/antique" encType="multipart/form-data" method="POST"> */}
              <form action="/antique"  method="POST"> 
 
@@ -34,6 +34,10 @@ class New extends React.Component {
             <div className="form-control broken" >
               <label htmlFor="price" >Price:</label>
               <input type="number" id="price" name="price" />
+            </div>
+            <div className="form-control broken" >
+              <label htmlFor="price" >Quantity:</label>
+              <input type="number" id="quantity" name="quantity" />
             </div>
             <div className="form-control broken" >
               <label htmlFor="image" >Image:</label>

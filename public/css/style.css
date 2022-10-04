@@ -26,9 +26,9 @@ body {
   line-height: 1.5;
   background-color: var(--color-light);
   color: var(--color-dark);
-  font-size: 16px;
-  background:url("https://static3.depositphotos.com/1004973/190/i/450/depositphotos_1907341-stock-photo-grunge-old-paper.jpg");
-background-clip: var(--color-light);
+  font-size: 20px;
+  /* background:url("https://static3.depositphotos.com/1004973/190/i/450/depositphotos_1907341-stock-photo-grunge-old-paper.jpg"); */
+background-color: #c13131;
 }
 
 a {
@@ -46,14 +46,18 @@ li {
   align-items: center;
   height: 80px;
   gap: 1rem;
-  font-size: 25px; 
+  font-size: 30px; 
+  color: rgb(15, 6, 6);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: rgb(238, 204, 12);
   /* background:url("https://thumbs.dreamstime.com/z/vintage-india-map-paper-old-pen-96884172.jpg"); */
 }
 
 .header a {
-    color: var(--color-primary);
+ 
+    color:rgb(9, 1, 26) ;
     text-decoration: underline;
+    margin-right: 20px;
 }
 .show{
     max-width: 600px;
@@ -106,9 +110,9 @@ input[type='checkbox'] {
     padding: 1rem;
 }
 .delete {
-    color:red;
-    background: transparent;
-    border: none;
+    color:darkgoldenrod;
+   
+   
     font-size: 1rem;
     margin-left: 1rem;
     cursor: pointer;
@@ -116,7 +120,7 @@ input[type='checkbox'] {
 .btn {
   display: block;
   margin-left: 30%;
-  width: 40%;
+  width: 60%;
   padding: 1rem;
   background: var(--color-primary);
   color: var(--color-light);
@@ -136,6 +140,7 @@ input[type='checkbox'] {
 
 .bold {
   font-weight: 700;
+  font-size: 25px;
 }
 
 .items {
@@ -155,6 +160,6 @@ input[type='checkbox'] {
     color : var(--color-dark);
 }
 .img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
 }

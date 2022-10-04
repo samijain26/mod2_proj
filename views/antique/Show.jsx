@@ -7,8 +7,8 @@ class Show extends React.Component {
     return (
       <Layout title="Product details" group ="antique">
         <div className='show'>
-            <h1>Product Details</h1>
-            <a href='/antique'>Back to home page</a>
+          <h1>{name}</h1>
+            <a href='/antique'>Go Back</a>
        <ul className='item' >
          <li>
                     <span className="bold"><img  className="img" src ={image} /></span> 
@@ -35,8 +35,16 @@ class Show extends React.Component {
                   <span className="bold">TimeUpdated: </span>{String(updatedAt)}
                   </li>
                   <form action={`/antique/${_id}?_method=DELETE`} method ='POST'>
-                   <a href={`/antique/${_id}/edit`}>Edit</a>
-                   <button typr = "submit" className = "delete">Delete</button>
+                  <button>
+                      <a href={`/antique/${_id}/edit`}>Edit</a>
+                  </button>
+                  
+                   <button type = "submit" className = "delete">Delete</button>
+                   <form action={`/antique/${_id}?_method=PUT`} method="POST">
+                   <button type="submit">Purchase Now
+                      {/* <a href={`/antique//Index/${_id}`}>Buy Now</a> */}
+                  </button>
+                  </form>
                   </form>
        </ul>
       
