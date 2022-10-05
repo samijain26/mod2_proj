@@ -10,7 +10,8 @@ You will need to create an .env file with your port number and a connection stri
 
 RESTful Routes
 
-https://docs.google.com/document/d/1YVKtYd86JHDVGDqve4NGto73B9kNZziw9xN3151IUfA/edit
+(https://docs.google.com/document/d/1YVKtYd86JHDVGDqve4NGto73B9kNZziw9xN3151IUfA/edit)
+
 
 ## Licence: MIT
 
