@@ -4,7 +4,7 @@ const Layout = require('../layout/layout')
 class Edit extends React.Component {
   render() {
 
-    const { image,name,description,price,origin,_id} =this.props.antique
+    const { image,name,description,price,origin,_id,quantity} =this.props.antique
     return (
       <Layout title='Edit Product' group ="antique">
         <div className="wrapper">
@@ -48,6 +48,11 @@ class Edit extends React.Component {
               <label htmlFor="price" >Price:</label>
               <input type="text" id="price" name="price" 
               defaultValue={price}/>
+            </div>
+            <div className="form-control" >
+              <label htmlFor="quantity" >Quantity:</label>
+              <input type="text" id="quantity" name="quantity" 
+              defaultValue={quantity}/>
             </div>
             <button className="btn" type="submit">
               Submit

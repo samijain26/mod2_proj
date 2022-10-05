@@ -3,7 +3,11 @@ const Layout = require('../layout/layout')
 
 class Show extends React.Component {
   render() {
-    const { image,name,description,origin,price,_id,createdAt,updatedAt} = this.props.antique
+    const { image,name,description,origin,price,_id,quantity,createdAt,updatedAt} = this.props.antique
+
+    // if (quantity > 0){
+    //   flag=false
+    // }
     return (
       <Layout title="Product details" group ="antique">
         <div className='show'>
@@ -29,6 +33,11 @@ class Show extends React.Component {
                     {price}
                   </li>
                   <li>
+                    <span className="bold">Quantity: </span>
+                    {quantity>0 ? quantity : 'Out of Stock'}
+                  </li>
+                  
+                  <li>
                   <span className="bold">TimeCreated: </span>{String(createdAt)}
                   </li>
                   <li>
@@ -40,12 +49,12 @@ class Show extends React.Component {
                   </button>
                   
                    <button type = "submit" className = "delete">Delete</button>
-                   <form action={`/antique/${_id}?_method=PUT`} method="POST">
-                   <button type="submit">Purchase Now
-                      {/* <a href={`/antique//Index/${_id}`}>Buy Now</a> */}
-                  </button>
+                   
                   </form>
-                  </form>
+                  {quantity>0 ?
+                  <form action={`/antique/${_id}/purchase?_method=PUT`} method="POST">
+                    <button type="submit" value="purchase">Purchase</button>
+                  </form> :''}
        </ul>
       
        

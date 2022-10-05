@@ -42,8 +42,9 @@ li {
 /* index */
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding:20px;
   height: 80px;
   gap: 1rem;
   font-size: 30px; 
@@ -54,10 +55,10 @@ li {
 }
 
 .header a {
- 
+    
     color:rgb(9, 1, 26) ;
     text-decoration: underline;
-    margin-right: 20px;
+   
 }
 .show{
     max-width: 600px;
@@ -120,7 +121,7 @@ input[type='checkbox'] {
 .btn {
   display: block;
   margin-left: 30%;
-  width: 60%;
+  width: 100%;
   padding: 1rem;
   background: var(--color-primary);
   color: var(--color-light);

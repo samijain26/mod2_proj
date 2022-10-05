@@ -4,7 +4,7 @@ const Layout = require('../layout/layout')
 class Index extends React.Component {
   render() {
     const  antiqueModel  = this.props.antiqueModel
-    console.log(antiqueModel)
+    
     return(
         <Layout title="Listing of available item" group="antiques">
             <div className="wrapper1">
@@ -38,7 +38,7 @@ class Index extends React.Component {
                   <span className="bold">Price: </span>${price}
                   </li>
                   <li>
-                  <span className="bold">Quantity Available: </span>{quantity}
+                  <span className="bold">Quantity: </span>{quantity}
                   </li>
                 </a>
               )

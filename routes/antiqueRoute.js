@@ -66,6 +66,31 @@ router.delete('/:id',(req,res) =>{
   })
 })
 
+// const buyItem = (req, res) => {
+//   Item.findByIdAndUpdate(req.params.id, { $inc: { quantity: -1 }  }, (err, foundItem) => {
+//     if (err) {
+//       res.status(400).json(err)
+//     } else {
+//       res.status(200).redirect(`/products/${req.params.id}`)
+//     }
+//   })
+//   }
+router.put('/:id/purchase',(req,res) =>{
+  //res.send('purchase')
+
+  antiqueModel.findByIdAndUpdate(req.params.id, { $inc : {quantity:-1}},(error,foundModel) =>{
+    if (error) {
+        res.status(400).json({ error })
+      } else {
+        res.status(200)
+
+        res.redirect(`/antique`)
+      }
+
+})
+
+})
+
 router.put('/:id',(req,res) =>{
 
   antiqueModel.findByIdAndUpdate(req.params.id,req.body,(error,foundModel) =>{
