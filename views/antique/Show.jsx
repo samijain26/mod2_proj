@@ -1,67 +1,92 @@
-const React = require('react')
-const Layout = require('../layout/layout')
+const React = require("react");
+const Layout = require("../layout/layout");
 
 class Show extends React.Component {
   render() {
-    const { image,name,description,origin,price,_id,quantity,createdAt,updatedAt} = this.props.antique
+    const {
+      image,
+      name,
+      description,
+      origin,
+      price,
+      _id,
+      quantity,
+      createdAt,
+      updatedAt,
+    } = this.props.antique;
 
     // if (quantity > 0){
     //   flag=false
     // }
     return (
-      <Layout title="Product details" group ="antique">
-        <div className='show'>
+      <Layout title="Product details" group="antique">
+        <div className="show">
           <h1>{name}</h1>
-            <a href='/antique'>Go Back</a>
-       <ul className='item' >
-         <li>
-                    <span className="bold"><img  className="img" src ={image} /></span> 
-                  </li>
-                  <li>
-                    <span className="bold">Name: </span> {name}
-                  </li>
-                  <li>
-                    <span className="bold">Description: </span>
-                    {description}
-                  </li>
-                  <li>
-                    <span className="bold">Origin: </span>
-                    {origin}
-                  </li>
-                  <li>
-                    <span className="bold">Price: $</span>
-                    {price}
-                  </li>
-                  <li>
-                    <span className="bold">Quantity: </span>
-                    {quantity>0 ? quantity : 'Out of Stock'}
-                  </li>
-                  
-                  <li>
-                  <span className="bold">TimeCreated: </span>{String(createdAt)}
-                  </li>
-                  <li>
-                  <span className="bold">TimeUpdated: </span>{String(updatedAt)}
-                  </li>
-                  <form action={`/antique/${_id}?_method=DELETE`} method ='POST'>
-                  <button>
-                      <a href={`/antique/${_id}/edit`}>Edit</a>
-                  </button>
-                  
-                   <button type = "submit" className = "delete">Delete</button>
-                   
-                  </form>
-                  {quantity>0 ?
-                  <form action={`/antique/${_id}/purchase?_method=PUT`} method="POST">
-                    <button type="submit" value="purchase">Purchase</button>
-                  </form> :''}
-       </ul>
-      
-       
-    </div>
-      </Layout>
 
-    )
-    }
+          <ul className="item">
+            <li>
+              <span className="bold">
+                <img className="imgShow" src={image} />
+              </span>
+            </li>
+            <li>
+              <span className="bold">Name: </span> {name}
+            </li>
+            <li>
+              <span className="bold">Description: </span>
+              {description}
+            </li>
+            <li>
+              <span className="bold">Origin: </span>
+              {origin}
+            </li>
+            <li>
+              <span className="bold">Price: $</span>
+              {price}
+            </li>
+            <li>
+              <span className="bold">Quantity: </span>
+              {quantity > 0 ? quantity : "Out of Stock"}
+            </li>
+
+            <li>
+              <span className="bold">TimeCreated: </span>
+              {String(createdAt.toDateString())}
+            </li>
+            <li>
+              <span className="bold">TimeUpdated: </span>
+              {String(updatedAt.toDateString())}
+            </li>
+            <div className="lineup">
+              <form action={`/antique/${_id}?_method=DELETE`} method="POST">
+                <button className="edit">
+                  <a href={`/antique/${_id}/edit`}>Edit</a>
+                </button>
+
+                <button type="submit" className="delete">
+                  Delete
+                </button>
+              </form>
+              {quantity > 0 ? (
+                <form
+                  action={`/antique/${_id}/purchase?_method=PUT`}
+                  method="POST">
+                
+                  <button className="purchase" type="submit" value="purchase">
+                    Purchase
+                  </button>
+                </form>
+              ) : (
+                ""
+              )}
+             
+                <button className="goback"> <a href="/antique">Go Back</a></button>
+              
+            </div>
+          </ul>
+        </div>
+      </Layout>
+    );
+  }
 }
-module.exports = Show
+module.exports = Show;

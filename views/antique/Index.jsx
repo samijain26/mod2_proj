@@ -7,11 +7,15 @@ class Index extends React.Component {
     
     return(
         <Layout title="Listing of available item" group="antiques">
+          
             <div className="wrapper1">
                 <div className="header" >
-                 <h1 > Jwels of India</h1>
-            <a href="/antique/new">Add New Product</a>
-          </div>
+                 <img className="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPWtfgPbSveBJ2-g_Nkznsm3kGiV_WUS1EHQ&usqp=CAU"/>
+                  Jewels of India
+                 <nav> <a href="/antique/new">Add New</a></nav>
+                 </div>
+           
+          {/* </div> */}
           <div className="items">
             { antiqueModel.map(antique => {
               const {name, description, _id, origin, price, image,quantity} = antique
@@ -38,7 +42,7 @@ class Index extends React.Component {
                   <span className="bold">Price: </span>${price}
                   </li>
                   <li>
-                  <span className="bold">Quantity: </span>{quantity}
+                  <span className="bold">Quantity: </span>{quantity>0 ? quantity : 'Out of Stock'}
                   </li>
                 </a>
               )

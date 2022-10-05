@@ -22,13 +22,12 @@
 
 /* base */
 body {
-  font-family: var(--font-family);
-  line-height: 1.5;
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.3;
+  color: rgb(240, 176, 16);
+  font-size: 16px;
   /* background:url("https://static3.depositphotos.com/1004973/190/i/450/depositphotos_1907341-stock-photo-grunge-old-paper.jpg"); */
-background-color: #c13131;
+  background-color: #cc1010;
 }
 
 a {
@@ -38,30 +37,33 @@ a {
 li {
   list-style: none;
 }
-
+h1{
+ text-align: center;
+ font-size: 40px;
+}
 /* index */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:20px;
-  height: 80px;
-  gap: 1rem;
-  font-size: 30px; 
-  color: rgb(15, 6, 6);
+  padding:5px;
+  height: 120px;
+  font-size: 80px; 
+  color: rgb(117, 7, 7);
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   background-color: rgb(238, 204, 12);
-  /* background:url("https://thumbs.dreamstime.com/z/vintage-india-map-paper-old-pen-96884172.jpg"); */
+  /* background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPWtfgPbSveBJ2-g_Nkznsm3kGiV_WUS1EHQ&usqp=CAU"); */
 }
 
 .header a {
     
-    color:rgb(9, 1, 26) ;
+    color:rgb(131, 54, 24) ;
     text-decoration: underline;
+    font-size: 25px;
    
 }
 .show{
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -97,31 +99,40 @@ input[type='checkbox'] {
 
 /* utilities */
 .wrapper {
-    background-color: #d09c9c;
+    background-color: #d4c23c;
   max-width: var(--MaxWidth);
-  margin: 1.5rem auto 0;
-  padding: 2rem;
-  box-shadow: #c03ee1;
+  margin: 1rem auto 0;
+  padding: 1rem;
+  box-shadow: hsl(120, 73%, 56%);
   border-radius: 20px;
-  max-width:500px ;
+  /* max-width:500px ; */
 }
 .wrapper1 {
     max-width: var(--MaxWidth);
-    margin: .5rem auto 0;
-    padding: 1rem;
+    /* margin: .5rem auto 0; */
+    /* padding: 1rem; */
 }
-.delete {
+
+.delete ,.edit,.purchase,.goback{
+  
     color:darkgoldenrod;
-   
-   
+   width: 80px;
+    padding: .2rem;
     font-size: 1rem;
     margin-left: 1rem;
     cursor: pointer;
+    border-radius: 10px;
+}
+.lineup{
+  display:flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  padding: 1rem;
 }
 .btn {
   display: block;
   margin-left: 30%;
-  width: 100%;
+  width: 50%;
   padding: 1rem;
   background: var(--color-primary);
   color: var(--color-light);
@@ -140,19 +151,21 @@ input[type='checkbox'] {
 }
 
 .bold {
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #e1deb2;
 }
 
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: .5rem;
-  margin: 1rem 0;
+ 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: .2rem;
+  margin: .2rem 0;
 }
 
 .item {
-  border: 1px solid var(--color-grey-light);
+  /* border: 1px solid var(--color-grey-light); */
   padding: 1rem;
   margin: 1rem 0;
   border-radius: var(--border-radius);
@@ -161,6 +174,15 @@ input[type='checkbox'] {
     color : var(--color-dark);
 }
 .img{
-    width: 100%;
+    width: 80%;
     height: auto;
+}
+.imgShow{
+  width: 50%;
+  float: right;
+  height: 400px;
+}
+.img1{
+  width: 210px;
+  height: 120px;
 }
