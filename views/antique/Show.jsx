@@ -58,12 +58,13 @@ class Show extends React.Component {
               {String(updatedAt.toDateString())}
             </li>
             <div className="lineup">
+            {/* <button className="btn1"> */}
+                  <a  className="btn1" href={`/antique/${_id}/edit`}>Edit</a>
+                {/* </button> */}
               <form action={`/antique/${_id}?_method=DELETE`} method="POST">
-                <button className="edit">
-                  <a href={`/antique/${_id}/edit`}>Edit</a>
-                </button>
+                
 
-                <button type="submit" className="delete">
+                <button type="submit" className="delete ">
                   Delete
                 </button>
               </form>
@@ -80,7 +81,9 @@ class Show extends React.Component {
                 ""
               )}
              
-                <button className="goback"> <a href="/antique">Go Back</a></button>
+                {/* <button className= "goback">  */}
+                <a className="btn1" href="/antique">Back</a>
+                {/* </button> */}
               
             </div>
           </ul>

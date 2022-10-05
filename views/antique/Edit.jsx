@@ -34,7 +34,7 @@ class Edit extends React.Component {
             </div>
             <div className="form-control">
               <label htmlFor="description">Description:</label>
-              <textarea name="description" id="description" cols="30" rows="10" placeholder="enter entry.."
+              <textarea name="description" id="description" cols="30" rows="4" placeholder="enter entry.."
               defaultValue={description}
                 required></textarea>
              

@@ -11,7 +11,7 @@ class New extends React.Component {
           {/* <form action="/antique" encType="multipart/form-data" method="POST"> */}
              <form action="/antique"  method="POST"> 
 
-            <div className="form-control broken">
+            <div className="form-control">
               <label htmlFor="name">Name:</label>
               <input
                 type="text"
@@ -21,25 +21,25 @@ class New extends React.Component {
                 required
               />
             </div>
-            <div className="form-control broken">
+            <div className="form-control ">
               <label htmlFor="description">Description:</label>
               <textarea name="description" id="description" cols="30" rows="5" placeholder="enter entry.."
                 required></textarea>
               
             </div>
-            <div className="form-control broken" >
+            <div className="form-control " >
               <label htmlFor="Origin" >Origin:</label>
               <input type="text" id="origin" name="origin" />
             </div>
-            <div className="form-control broken" >
+            <div className="form-control" >
               <label htmlFor="price" >Price:</label>
               <input type="number" id="price" name="price" />
             </div>
-            <div className="form-control broken" >
+            <div className="form-control" >
               <label htmlFor="price" >Quantity:</label>
               <input type="number" id="quantity" name="quantity" />
             </div>
-            <div className="form-control broken" >
+            <div className="form-control" >
               <label htmlFor="image" >Image:</label>
               <input type="text" id="image" name="image" />
             </div>

@@ -84,7 +84,7 @@ router.put('/:id/purchase',(req,res) =>{
       } else {
         res.status(200)
 
-        res.redirect(`/antique`)
+        res.redirect(`/antique/${req.params.id}`)
       }
 
 })
