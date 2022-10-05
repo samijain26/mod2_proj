@@ -59,7 +59,10 @@ class Show extends React.Component {
             </li>
             <div className="lineup">
             {/* <button className="btn1"> */}
-                  <a  className="btn1" href={`/antique/${_id}/edit`}>Edit</a>
+             <div  className="btn1" >
+             <a href={`/antique/${_id}/edit`}>Edit</a>
+             </div>
+                  
                 {/* </button> */}
               <form action={`/antique/${_id}?_method=DELETE`} method="POST">
                 
