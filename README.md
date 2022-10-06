@@ -39,7 +39,8 @@ RESTful Routes
 # updates for future:
 ### Add to cart button and functionality
 
-
+## you can reach to my store using:
+https://github.com/samijain26/mod2_proj
 
 ## Licence: MIT
 

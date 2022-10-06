@@ -9,7 +9,9 @@ const methodOverride = require('method-override')
 const path = require('path')
 
 const PORT = process.env.PORT || 3000
-
+app.get('/',(req,res)=>{
+    res.render('/antique')
+})
 // setup our view engine
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
