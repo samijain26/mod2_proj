@@ -40,6 +40,10 @@ RESTful Routes
 ### Add to cart button and functionality
 
 ## you can reach to my store using:
+
+https://jewels-of-india.cyclic.app
+
+## on GITHUB you acn reach my code at:
 https://github.com/samijain26/mod2_proj
 
 ## Licence: MIT
