@@ -38,9 +38,10 @@ li {
   list-style: none;
 }
 h1{ display: flex;
-  justify-content: center;
- text-align: center;
- font-size: 50px;
+  justify-content: flex-start;
+align-items: center;
+ font-size: 30px;
+ padding-left: 200px;
 }
 /* index */
 .header {
@@ -58,9 +59,12 @@ h1{ display: flex;
 
 .header a {
   display: flex;
+  justify-content: center;
     color:rgb(131, 54, 24) ;
-    text-decoration: underline;
-    font-size: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    width:120px;
+    
    
 }
 .show{
@@ -75,7 +79,7 @@ h1{ display: flex;
 
 label {
   display: block;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0.25rem;
   font-size: 20px;
 }
@@ -83,8 +87,9 @@ label {
 input,
 textarea {
   display: block;
-  padding: 1.2rem;
+  padding: .5rem;
   width:80%;
+
 }
 
 .broken {
@@ -100,11 +105,12 @@ textarea {
     /* background-color: #d4c23c; */
     display:block;
     max-width: var(--MaxWidth);
-  margin: 1rem ;
+  margin: .5rem ;
   margin-left: 150px;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 40px;
-  padding-top: 10px;
+  padding-top: 5px;
+  height:200px;
   /* max-width:500px ; */
 }
 /* form */
@@ -112,6 +118,8 @@ textarea {
   display: block;
   margin: .7rem 0;
   align-items: center;
+  line-height: 1rem;
+  
 }
 .wrapper1 {
     max-width: var(--MaxWidth);
@@ -121,9 +129,9 @@ textarea {
 
 .delete ,.edit,.purchase,.goback
 {display: block;
-  background: rgb(235, 217, 18);
-    color:darkgoldenrod;
-   width: 150px;
+  background: rgb(28, 201, 227);
+    color:rgb(184, 11, 11);
+   width: 120px;
    height: 50px;
     padding: .2rem;
     padding-bottom: 10px;
@@ -135,8 +143,8 @@ textarea {
 .btn1{
   display:block;
   text-align: center;
-  color:darkgoldenrod;
-  min-width:100px;
+  color:rgb(184, 11, 11);
+  min-width:90px;
   height: 50px;
   padding-top: .4rem;
    font-size: 1.5rem;
@@ -145,7 +153,7 @@ textarea {
   border:#050b07 solid 1px;
    border-radius: 20px;
 
-   background: rgb(235, 217, 18);
+   background: rgb(28, 201, 227);
 }
 
 .btn1:last-child{
@@ -178,13 +186,13 @@ margin-left: 20px;
   display: block;
   margin-left: 30%;
   width: 20%;
-  padding: .5rem;
+  padding: .3rem;
   background: rgb(235, 217, 18);
   color: blue;
-  border: 1px solid transparent;
+  border: 1px solid black;
   cursor: pointer;
   font-family: var(font-family);
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 20px;
   transition: var(--transition);
 }
@@ -233,6 +241,6 @@ margin-left: 20px;
 }
 
 .btn1 a {
-  color:darkgoldenrod;
+ color :rgb(184, 11, 11);
 
 }

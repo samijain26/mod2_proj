@@ -12,7 +12,7 @@ class Index extends React.Component {
                 <div className="header" >
                  <img className="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPWtfgPbSveBJ2-g_Nkznsm3kGiV_WUS1EHQ&usqp=CAU"/>
                   Jewels of India
-                 <nav> <a href="/antique/new">Add New</a></nav>
+                 <button className='btn1'><a href="/antique/new">Add New</a></button>
                  </div>
            
           {/* </div> */}
@@ -22,7 +22,7 @@ class Index extends React.Component {
 
               return (
                 
-                <a href={`/antique/${_id}`}  className="item">
+                <a href={`/antique/${_id}`} key={_id} className="item">
                     <li>
                    
                     {/* <span className="bold"><img src ="./images/1664755171217.png"/>Image: </span> */}

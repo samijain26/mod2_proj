@@ -13,7 +13,7 @@ RESTful Routes
 <img width="713" alt="Screen Shot 2022-10-05 at 5 12 37 PM" src="https://user-images.githubusercontent.com/110350498/194164786-f6a313e4-7fe9-41a8-8237-8cba62c4553b.png">
 
 ## Screen shot:
-Jewel of India carries traditinal, mostly handcrafted product from Rajisthan,India. This express app is able to showcase all the product,create a new product,edit or delete it from MongoDB database, Purchase a product. Following are few screen shot of my Express app
+### Jewel of India carries traditinal, mostly handcrafted product from Rajisthan,India. This express app is able to showcase all the product,create a new product,edit or delete it from MongoDB database, Purchase a product. Following are few screen shot of my Express app
 
 
 
@@ -27,6 +27,19 @@ Jewel of India carries traditinal, mostly handcrafted product from Rajisthan,Ind
 
 
 <img width="1267" alt="Screen Shot 2022-10-05 at 4 57 33 PM" src="https://user-images.githubusercontent.com/110350498/194164086-62d205aa-4f74-468e-9b77-ff3a9305d591.png">
+
+# Image taken from:
+### etsystatic.com
+### img1-cg.wfcdn.com
+### images.squarespace-cdn.com
+### www.holidify.com
+### i.ebayimg.com
+### encrypted-tbn0.gstatic.com
+### ae01.alicdn.com
+# updates for future:
+### Add to cart button and functionality
+
+
 
 ## Licence: MIT
 

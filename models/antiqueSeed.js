@@ -12,7 +12,7 @@ const antiqueSeed = [
     },
     {
       image:"https://secure.img1-cg.wfcdn.com/im/03139601/resize-h445%5Ecompr-r85/1396/139614339/Handmade+Metal+Decorative+Bowl.jpg",
-      name: 'HandMade Metal Decorative Bowl',
+      name: 'HandMade Metal Decorative Diya',
       description:"This is handpainted gold color diya used for spritual and relegious purpose.",
       origin: 'India',
       price:150,
@@ -28,7 +28,7 @@ const antiqueSeed = [
     },
     {
       image:"https://www.holidify.com/images/cmsuploads/compressed/handicrafts_20180222144637.jpg",
-      name: 'Soveniers from Jaipue(rajasthan)',
+      name: 'Soveniers from Jaipur(Rajasthan)',
       description: "22 carat gold necklace with earings. Its a unique peice with kundan carving",
       origin: 'India',
       price:20,
@@ -36,7 +36,7 @@ const antiqueSeed = [
     },
     {
       image:"https://i.ebayimg.com/images/g/PD0AAOSwdiBhPpGI/s-l400.jpg",
-      name: 'Indian handpainted Panting',
+      name: ' Handpainted Painting',
       description: "Painting on Mogul Scene. It is handpainted on cloth",
       origin: 'India',
       price:20,
@@ -44,7 +44,7 @@ const antiqueSeed = [
     },
     {
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNTMX8yV5mCGVcOZh8q71442xCTYIGccgSYw&usqp=CAU",
-      name: 'HandCrafts of Rajistan',
+      name: 'HandCrafts of Rajisthan',
       description: "Beautiful Rajistan traditinal carving",
       origin: 'India',
       price:60,
@@ -61,7 +61,7 @@ const antiqueSeed = [
     {
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMLmtbOLN6qWnE-KmCKpw_5x9aGwUmtObJg&usqp=CAU",
       name: 'Traditinal Kundan Jwelry',
-      description: "Traditional style necklace from Rajistan,India",
+      description: "Traditional style necklace from Rajisthan,India",
       origin: 'India',
       price:60,
       quantity:4,
