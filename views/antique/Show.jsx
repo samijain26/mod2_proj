@@ -49,14 +49,7 @@ class Show extends React.Component {
               {quantity > 0 ? quantity : "Out of Stock"}
             </li>
 
-            <li>
-              <span className="bold">TimeCreated: </span>
-              {String(createdAt.toDateString())}
-            </li>
-            <li>
-              <span className="bold">TimeUpdated: </span>
-              {String(updatedAt.toDateString())}
-            </li>
+            
             <div className="lineup">
             {/* <button className="btn1"> */}
              <div  className="btn1" >
