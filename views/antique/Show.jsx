@@ -45,7 +45,7 @@ class Show extends React.Component {
               {price}
             </li>
             <li>
-              <span className="bold">Quantity: </span>
+              <span className="bold">Quantity in Stock: </span>
               {quantity > 0 ? quantity : "Out of Stock"}
             </li>
 

@@ -42,7 +42,7 @@ class Index extends React.Component {
                   <span className="bold">Price: </span>${price}
                   </li>
                   <li>
-                  <span className="bold">Quantity: </span>{quantity>0 ? quantity : 'Out of Stock'}
+                  <span className="bold">Quantity in Stock: </span>{quantity>0 ? quantity : 'Out of Stock'}
                   </li>
                 </a>
               )

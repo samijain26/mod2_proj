@@ -123,6 +123,7 @@ textarea {
 }
 .wrapper1 {
     max-width: var(--MaxWidth);
+    
     /* margin: .5rem auto 0; */
     /* padding: 1rem; */
 }
